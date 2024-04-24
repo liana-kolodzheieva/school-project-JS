@@ -4,39 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css.css" />
   </head>
   <body>
     <div>
+      <header>
+        <h1 class="name">website about JS</h1>
+      </header>
+    <div class="nav">
+      <a href="../index.html">Main</a>
+      <a href="output.html">Output</a>
+      <a href="operators.html">operators</a>
+      <a href="math.html">Math</a>
+      <a href="functions.html">functions</a>
+    </div>
       <h2>JavaScript Math Object</h2>
+      <p>
+        There are a lot of mathematical objects in JS, but here we will look at
+        a few of them
+      </p>
       <h3>Math Properties (Constants)</h3>
       <div class="example">
         <h4>Example</h4>
-        <img src="../PHOTO/6.jpg" alt="#" />
+        <code
+          >Math.E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// returns
+          Euler's number</code
+        >
+        <br />
+        <code
+          >Math.PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// returns PI</code
+        >
+        <br />
+        <code
+          >Math.SQRT2&nbsp;&nbsp;&nbsp;&nbsp;// returns the square root of
+          2</code
+        >
+        <br />
+        <code>Math.SQRT1_2&nbsp;&nbsp;// returns the square root of 1/2</code>
+        <br />
+        <code
+          >Math.LN2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// returns the natural
+          logarithm of 2</code
+        >
+        <br />
+        <code
+          >Math.LN10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// returns the natural
+          logarithm of 10</code
+        >
+        <br />
+        <code
+          >Math.LOG2E &nbsp;&nbsp;&nbsp;// returns base 2 logarithm of E</code
+        >
+        <br />
+        <code>Math.LOG10E&nbsp;&nbsp;// returns base 10 logarithm of E</code>
         <br />
         <br />
         <button>let's try it!</button>
       </div>
-      <p><code class="code">Math.E </code> - zreturns Euler's number</p>
-      <p><code class="code">Math.PI </code> - returns PI</p>
-      <p>
-        <code class="code">Math.SQRT2 </code> - returns the square root of 2
-      </p>
-      <p>
-        <code class="code">Math.SQRT1_2 </code> - returns the square root of 1/2
-      </p>
-      <p>
-        <code class="code">Math.LN2 </code> - returns the natural logarithm of 2
-      </p>
-      <p>
-        <code class="code">Math.LN10 </code> - returns the natural logarithm of
-        10
-      </p>
-      <p>
-        <code class="code">Math.LOG2E </code> - returns base 2 logarithm of E
-      </p>
-      <p>
-        <code class="code">Math.LOG10E </code> - returns base 10 logarithm of E
-      </p>
       <h3>Number to Integer</h3>
       <table>
         <tr>
@@ -62,19 +86,31 @@
       </p>
       <div class="example">
         <h4>Example</h4>
-        <img src="../PHOTO/7.jpg" alt="#" />
+        <code>Math.round(4.6);</code>
+        <br />
+        <code>Math.round(4.5);</code>
+        <br />
+        <code>Math.round(4.4);</code>
         <br />
         <br />
         <button>let's try it!</button>
       </div>
       <h3>Math.ceil()</h3>
       <p>
-        <code class="code">Math.ceil()</code>returns the value of x rounded up
+        <code class="code">Math.ceil() </code> returns the value of x rounded up
         to its nearest integer:
       </p>
       <div class="example">
         <h4>Example</h4>
-        <img src="../PHOTO/8.jpg" alt="#" />
+        <code>Math.ceil(4.9);</code>
+        <br />
+        <code>Math.ceil(4.7);</code>
+        <br />
+        <code>Math.ceil(4.4);</code>
+        <br />
+        <code>Math.ceil(4.2); </code>
+        <br />
+        <code>Math.ceil(-4.2);</code>
         <br />
         <br />
         <button>let's try it!</button>
@@ -86,7 +122,43 @@
       </p>
       <div class="example">
         <h4>Example</h4>
-        <img src="../PHOTO/9.jpg" alt="#" />
+        <code>Math.floor(4.9);</code>
+        <br />
+        <code>Math.floor(4.7);</code>
+        <br />
+        <code>Math.floor(4.4);</code>
+        <br />
+        <code>Math.floor(4.2);</code>
+        <br />
+        <br />
+        <button>let's try it!</button>
+      </div>
+      <h3>Math.trunc()</h3>
+      <p><code>Math.trunc(x) </code> returns the integer part of x:</p>
+      <div class="example">
+        <code>Math.trunc(4.9);</code>
+        <br />
+        <code>Math.trunc(4.7);</code>
+        <br />
+        <code>Math.trunc(4.4);</code>
+        <br />
+        <code>Math.trunc(4.2); </code>
+        <br />
+        <code>Math.trunc(-4.2); </code>
+        <br />
+        <br />
+        <button>let's try it!</button>
+      </div>
+      <h3>Math.sign()</h3>
+      <p>
+        <code>Math.sign(x) </code> returns if x is negative, null or positive:
+      </p>
+      <div class="example">
+        <code>Math.sign(-4);</code>
+        <br />
+        <code>Math.sign(0);</code>
+        <br />
+        <code>Math.sign(4);</code>
         <br />
         <br />
         <button>let's try it!</button>

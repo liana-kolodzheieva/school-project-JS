@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+html,
+body,
+a,
+li,
+ul,
+div,
+span,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+body {
+  font-family: verdana, Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+header {
+  background-color: rgb(252, 242, 230);
+}
+header h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px 30px 30px 10px;
+  clear: both;
+  text-align: center;
+  color: rgb(138, 131, 131);
+}
+.nav {
+  background-color: rgb(236, 220, 200);
+  border-top: 3px solid rgb(197, 173, 143);
+  border-bottom: 3px solid rgb(197, 173, 143);
+}
+.nav li {
+  float: left;
+  list-style: none;
+}
