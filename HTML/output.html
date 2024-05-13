@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>output</title>
     <link rel="stylesheet" href="../css.css" />
+    <script src="../prism.js"></script>
+    <script src="../Js.js"></script>
   </head>
   <body>
     <header>
@@ -25,9 +27,9 @@
         consider several options
       </p>
       <!-- Using document.write() -->
-      <h3>Using <code class="code">document.write()</code></h3>
+      <h3>Using document.write()</h3>
       <p class="red">
-        Vikoristannya <code class="code">document.write()</code> after importing
+       <code class="code">document.write()</code> after importing
         an HTML document remove all relevant HTML
       </p>
       <p>
@@ -36,6 +38,21 @@
       </p>
       <div class="example">
         <h4>Example</h4>
+        <code><!DOCTYPE html>
+          <html>
+          <body>
+          
+          <h1>My First Web Page</h1>
+          <p>My First Paragraph</p>
+          
+          <p id="demo"></p>
+          
+          <script>
+          document.getElementById("demo").innerHTML = 5 + 6;
+          </script>
+          
+          </body>
+          </html></code>
         <button>let's try it!</button>
       </div>
       <!-- docwindow.alert() -->
