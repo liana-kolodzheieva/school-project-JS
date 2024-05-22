@@ -6,81 +6,116 @@
     <title>output</title>
     <link rel="stylesheet" href="../css.css" />
     <script src="../prism.js"></script>
+    <link rel="stylesheet" href="../prism.css" />
     <script src="../Js.js"></script>
   </head>
+
   <body>
     <header>
       <h1 class="name">website about JS</h1>
     </header>
-    <div class="nav">
-      <a href="../index.html">Main</a>
-      <a href="output.html">Output</a>
-      <a href="operators.html">operators</a>
-      <a href="math.html">Math</a>
-      <a href="functions.html">functions</a>
+    <div class="box">
+      <div class="nav">
+        <a href="../index.html">Main</a>
+        <a href="output.html">Output</a>
+        <a href="operators.html">operators</a>
+        <a href="math.html">Math</a>
+        <a href="functions.html">functions</a>
+      </div>
+      <div class="output">
+        <h2>JavaScript Output</h2>
+        <!-- Using document.write() -->
+        <h3>Using document.write()</h3>
+        <p class="red">
+          <code class="code">document.write()</code> after importing an HTML
+          document remove all relevant HTML
+        </p>
+        <p>
+          here <code class="code">Using document.write()</code> displays text on
+          the site page
+        </p>
+        <div class="example">
+          <h4>Example</h4>
+          <pre>
+      <code class="language-markup">
+        &lt;!DOCTYPE html>
+        &lt;html>
+        &lt;body>
+        
+        &lt;h1>My First Web Page&lt;/h1>
+        &lt;p>My first paragraph.&lt;/p>
+        
+        &lt;button type="button" onclick="document.write(5 + 6)">Try it&lt;/button>
+        
+        &lt;/body>
+        &lt;/html>
+        </code>
+        </pre>
+          <button>let's try it!</button>
+        </div>
+        <!-- docwindow.alert() -->
+        <h3>Using docwindow.alert()</h3>
+        <p>
+          <code class="code">window.alert()</code> creates a pop-up window that
+          blocks all site activity until you close it
+        </p>
+        <div class="example">
+          <h4>Example</h4>
+          <pre>
+        <code class="language-markup">
+          &lt;!DOCTYPE html>
+          &lt;html>
+          &lt;body>
+
+          &lt;h1>My First Web Page&lt;/h1>
+          &lt;p>My first paragraph.&lt;/p>
+          &lt;script>
+           window.alert(5 + 6);
+          &lt;/script>
+          &lt;/body>
+          &lt;/html>
+        </code>
+      </pre>
+          <br />
+          <br />
+          <button>let's try it!</button>
+        </div>
+        <!-- console.log() -->
+        <h3>Using <code class="code">dconsole.log()</code></h3>
+        <p>
+          <code class="code">window.alert()</code> creates a pop-up window that
+          blocks all site activity until you close it
+        </p>
+        <div class="example">
+          <h4>Example</h4>
+          <pre>
+  <code class="language-markup">
+    &lt;!DOCTYPE html>
+    &lt;html>
+    
+    &lt;body>
+    
+      &lt;h1>My First Web Page&lt;/h1>
+      &lt;p>My first paragraph.&lt;/p>
+    
+      &lt;script>
+        alert(5 + 6);
+      &lt;/script>
+    
+    &lt;/body>
+    
+    &lt;/html>
+  </code>
+</pre>
+          <br />
+          <br />
+          <button>let's try it!</button>
+        </div>
+      </div>
     </div>
-    <div class="output">
-      <h2>JavaScript Output</h2>
-      <h4>Using innerHTML</h4>
-      <p>
-        There are many variations of information output in JS, and here we will
-        consider several options
-      </p>
-      <!-- Using document.write() -->
-      <h3>Using document.write()</h3>
-      <p class="red">
-       <code class="code">document.write()</code> after importing
-        an HTML document remove all relevant HTML
-      </p>
-      <p>
-        here <code class="code">Using document.write()</code> displays text on
-        the site page
-      </p>
-      <div class="example">
-        <h4>Example</h4>
-        <code><!DOCTYPE html>
-          <html>
-          <body>
-          
-          <h1>My First Web Page</h1>
-          <p>My First Paragraph</p>
-          
-          <p id="demo"></p>
-          
-          <script>
-          document.getElementById("demo").innerHTML = 5 + 6;
-          </script>
-          
-          </body>
-          </html></code>
-        <button>let's try it!</button>
-      </div>
-      <!-- docwindow.alert() -->
-      <h3>Using <code class="code">docwindow.alert()</code></h3>
-      <p>
-        <code class="code">window.alert()</code> creates a pop-up window that
-        blocks all site activity until you close it
-      </p>
-      <div class="example">
-        <h4>Example</h4>
-        <img src="../PHOTO/2.jpeg" alt="2" />
-        <br />
-        <br />
-        <button>let's try it!</button>
-      </div>
-      <!-- console.log() -->
-      <h3>Using <code class="code">dconsole.log()</code></h3>
-      <p>
-        <code class="code">window.alert()</code> creates a pop-up window that
-        blocks all site activity until you close it
-      </p>
-      <div class="example">
-        <h4>Example</h4>
-        <img src="../PHOTO/3.jpg" alt="3" />
-        <br />
-        <br />
-        <button>let's try it!</button>
-      </div>
-    </div>
+    <footer>
+      <p>Contact: liana.kolodgeeva@gmail.com</p>
+      <p>Copyright © Minecraft-guides.com, 2024</p>
+    </footer>
   </body>
 </html>

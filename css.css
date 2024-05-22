@@ -1,9 +1,8 @@
-
-
 * {
   box-sizing: border-box;
 }
-html{
+
+html {
   height: 100%;
 }
 
@@ -27,9 +26,14 @@ p {
   vertical-align: baseline;
 }
 
+.output {
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
 body {
   font-family: verdana, Arial, sans-serif;
-  background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -45,7 +49,7 @@ header h1 {
   text-align: center;
 }
 
-.nav {
+/* .nav {
   background-color: rgb(221, 235, 210);
   border-top: 3px solid rgb(79, 117, 105);
   border-bottom: 3px solid rgb(79, 117, 105);
@@ -81,9 +85,41 @@ header h1 {
   content: " ";
   display: table;
   clear: both;
-} 
+} */
 
-.output{
+.output {
   padding-left: 10px;
   padding-right: 10px;
+  width: 80%;
+}
+
+.nav h2 {
+  font-size: 0.95em;
+  margin-top: 15px;
+}
+
+.nav h3 {
+  font-size: 0.85em;
+  margin-top: 10px;
+}
+
+.nav p,
+.nav li {
+  font-size: .75em;
+  margin-top: 10px;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.nav {
+  float: left;
+  width: 20%;
+  padding: 0px 10px 0px 20px;
+  background-color: aqua;
+}
+
+.box {
+  display: flex;
 }
