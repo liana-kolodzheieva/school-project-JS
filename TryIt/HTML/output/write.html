@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../../prism.css" />
+    <script src="../../../prism.js"></script>
   </head>
-  <body></body>
+  <body>
+    <ul>
+      <li><a class="back" href="../../../HTML/output.html">⇦</a></li>
+      <li><a class="home" href="../../../index.html">&#8962;</a></li>
+    </ul>
+    <div class="main">
+      <pre>
+      <code class="language-markup">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;body>
+        
+&lt;h1>My First Web Page&lt;/h1>
+&lt;p>My first paragraph.&lt;/p>
+&lt;button type="button" onclick="document.write(5 + 6)">Try it&lt;/button>
+        
+&lt;/body>
+&lt;/html>
+        </code> 
+        </pre>
+    </div>
+    <div class="output">
+      <div id="content">
+        <h1>My First Web Page</h1>
+        <p>My first paragraph.</p>
+        <button type="button" onclick="replaceContent()">Try it</button>
+      </div>
+    </div>
+
+    <script>
+      function replaceContent() {
+        document.getElementById("content").innerHTML = "11";
+      }
+    </script>
+  </body>
 </html>

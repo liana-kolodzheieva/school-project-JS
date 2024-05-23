@@ -90,7 +90,7 @@ header h1 {
   background-color: #f5f6fa;
 }
 
-.nav a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -178,4 +178,8 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
+}
+
+button a {
+  color: whitesmoke;
 }
