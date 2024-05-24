@@ -11,14 +11,46 @@
   <body>
     <ul>
       <li><a class="home" href="../../../index.html">&#8962;</a></li>
-      <li><a class="back" href="../../../HTML/output.html">⇦</a></li>
+      <li><a class="back" href="../../../HTML/functions.html">⇦</a></li>
     </ul>
     <div class="main">
       <pre>
       <code class="language-markup">
+  &lt;body>
+     &lt;p id="demo">&lt;/p>
+     &lt;p id="demo1">&lt;/p>         
+     &lt;p id="demo2">&lt;/p>  
+     &lt;script>
+        document.getElementById("demo2").innerHTML = carName;
+        function myFunction() {
+            let carName = "Volvo";
+            document.getElementById("demo").innerHTML = carName;}
+        document.getElementById("demo1").innerHTML = carName;
+     &lt;/script>
+     myFunction();
+  &lt;/body>
         </code> 
-        </pre>
+      </pre>
     </div>
-    <div class="output"></div>
+    <div class="output">
+      <!DOCTYPE html>
+      <html>
+        <body>
+          <p id="demo"></p>
+          <p id="demo1"></p>
+          <p id="demo2"></p>
+          <script>
+            let carName;
+            document.getElementById("demo2").innerHTML = carName;
+            function myFunction() {
+              let carName = "Victim";
+              document.getElementById("demo").innerHTML = carName;
+            }
+            document.getElementById("demo1").innerHTML = carName;
+            myFunction();
+          </script>
+        </body>
+      </html>
+    </div>
   </body>
 </html>
