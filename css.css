@@ -33,18 +33,7 @@ body {
 }
 
 header {
-  background-color: #e0e4ff;
-}
-
-header h1 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 30px 30px 30px 10px;
-  clear: both;
-  text-align: center;
-  color: black;
-  border-bottom: 2px solid #656da5;
+  background-color: #d8d8d8;
 }
 
 /* .nav {
@@ -92,7 +81,7 @@ header h1 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #f5f6fa;
 }
 
 .nav li {
@@ -102,12 +91,13 @@ a {
 }
 
 .nav {
+  color: #f5f6fa;
   float: left;
   width: 20%;
   padding: 0px 10px 0px 20px;
-  background-color: #e1ffdb;
+  background-color: #3ab296;
   font-size: 25px;
-  border-right: 2px solid #656da5;
+  border-right: 4px solid #3ab296;
 }
 
 .box {
@@ -119,9 +109,10 @@ footer {
   padding: 30px 30px 30px 10px;
   clear: both;
   text-align: center;
-  color: black;
-  border-top: 2px solid #656da5;
-  background-color: #e0e4ff;
+  font-size: 15px;
+  color: #2d3432;
+  border-top: 4px solid #3ab296;
+  background-color: #d8d8d8;
 }
 
 .text {
@@ -182,4 +173,59 @@ button {
 
 button a {
   color: whitesmoke;
+}
+
+.testing {
+  background-color: #3ab296;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.tests {
+  background-color: #f5f6fa;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+.testText {
+  padding-bottom: 8px;
+  color: #f5f6fa;
+  padding: 10px;
+}
+
+.test {
+  background-color: #d8d8d8;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+.answer {
+  border: none;
+  height: 24px;
+  margin-right: 4px;
+  padding: 5px;
+  width: 13%;
+  font-size: 17px;
+}
+
+header {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px 30px 30px 10px;
+  clear: both;
+  text-align: center;
+  color: #2d3432;
+  border-bottom: 4px solid #3ab296;
+  /* font-size: 1.5em !important; */
+}
+
+.task {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
 }
