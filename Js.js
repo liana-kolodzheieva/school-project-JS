@@ -33,17 +33,6 @@ function stylesIfWrongAnswer() {
   document.getElementById("outputTests").style.padding - "10px";
 }
 
-function checkingTheAnswerInOutPutTest1() {
-  let corectAnsverInOutPutTest1 = ".alert";
-  let usersAnsverInOutPutTest1 = document.getElementById("answer").value;
-  checkingTheAnswerIfThereIs1Answer(
-    usersAnsverInOutPutTest1,
-    corectAnsverInOutPutTest1
-  );
-  document.getElementById("butt").innerHTML =
-    '<button id="butt" onclick="secondQuestionInOutPut()" style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Sumbit </button>';
-}
-
 function stylesForNewQ() {
   document.getElementById("outputTests").style.backgroundColor =
     "rgb(245, 246, 250)";
@@ -62,10 +51,51 @@ function stylesForNewQ() {
     "butt"
   ).innerHTML = " ";
 }
+// Output checking
+
+function checkingTheAnswerInOutPutTest1() {
+  let corectAnsverInOutPutTest1 = ".alert";
+  let usersAnsverInOutPutTest1 = document.getElementById("answer").value;
+  checkingTheAnswerIfThereIs1Answer(
+    usersAnsverInOutPutTest1,
+    corectAnsverInOutPutTest1
+  );
+  document.getElementById("butt").innerHTML =
+    '<button id="butt" onclick="secondQuestionInOutPut()" style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Continue </button>';
+}
+
+function checkingTheAnswerInOutPutTest2() {
+  let correctAnswer = ".log";
+  let userAnswer = document.getElementById("answer2").value;
+  checkingTheAnswerIfThereIs1Answer(userAnswer, correctAnswer)
+  document.getElementById("butt").innerHTML =
+    `<button id="butt" onclick="firstQuestionInOutPut()" 
+    style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Return </button>`;
+
+}
+
+// Output new
+
+function firstQuestionInOutPut() {
+  stylesForNewQ();
+  document.getElementById("task").innerHTML = "1. Fill in the field so that the resulting text is displayed in a pop - up window";
+  document.getElementById("outputTest").innerHTML =
+    "<div 'id='outputTest'' 'class='test''>" +
+    "window" +
+    "<input style = 'margin-right:4px; height:24px; width:13%; font-size:17px; border: none;' type='text' id='answer'/>" +
+    "('Hello World!');" +
+    "</div>";
+  document.getElementById("butt").innerHTML = document.getElementById(
+    "butt"
+  ).innerHTML =
+    `<button id="butt" onclick="checkingTheAnswerInOutPutTest1()"
+    style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Sumbit </button>`;
+
+}
 
 function secondQuestionInOutPut() {
   stylesForNewQ();
-  document.getElementById("task").innerHTML = "Add the missing word";
+  document.getElementById("task").innerHTML = "2. Add the missing word";
   document.getElementById("outputTest").innerHTML =
     "<div 'id='outputTest'' 'class='test''>" +
     "console" +
@@ -75,11 +105,7 @@ function secondQuestionInOutPut() {
   document.getElementById("butt").innerHTML = document.getElementById(
     "butt"
   ).innerHTML =
-    '<button id="butt" onclick="checkingTheAnswerInOutPutTest2()" style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Return </button>';
+    '<button id="butt" onclick="checkingTheAnswerInOutPutTest2()" style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Sumbit </button>';
 }
 
-function checkingTheAnswerInOutPutTest2() {
-  let correctAnswer = ".log";
-    let userAnswer = document.getElementById("answer2").value;
-    checkingTheAnswerIfThereIs1Answer(userAnswer, correctAnswer)
-}
+
