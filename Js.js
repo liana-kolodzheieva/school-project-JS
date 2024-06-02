@@ -1,52 +1,61 @@
 function checkingTheAnswerIfThereIs1Answer(userAnswer, correctAnswer) {
   if (userAnswer === correctAnswer) {
     stylesIfCorrectAnswer();
-    document.getElementById("task").innerHTML =
-      '<h3 style = "color:#04AA6D"> CORRECT!';
-    document.getElementById("ex").innerHTML = " ";
-    document.getElementById("outputTest").innerHTML = " ";
-    document.getElementById("outputTest").style.backgroundColor = "#D9EEE1";
   } else {
     stylesIfWrongAnswer();
-    document.getElementById("task").innerHTML =
-      '<h3 style = "color:#b94a48"> WRONG!';
-    document.getElementById("ex").innerHTML = " ";
-    document.getElementById("outputTest").innerHTML = " ";
-    document.getElementById("outputTest").style.backgroundColor = "#FFC0C7";
+  }
+}
+
+function checkingTheAnswerIfThereIs2Answer(userAnswer1, userAnswer2, correctAnswer1, correctAnswer2) {
+  if (userAnswer1 === correctAnswer1 && userAnswer2 === correctAnswer2) {
+    stylesIfCorrectAnswer()
+  } else {
+    stylesIfWrongAnswer()
   }
 }
 function stylesIfCorrectAnswer() {
-  document.getElementById("outputTests").style.backgroundColor = "#D9EEE1";
-  document.getElementById("outputTests").style.paddingLeft = "5%";
-  document.getElementById("outputTests").style.paddingTop = "5%";
-  document.getElementById("outputTests").style.height = "265px";
-  document.getElementById("outputTests").style.margin = "10px";
-  document.getElementById("outputTests").style.padding - "10px";
+  document.getElementById("Tests").style.backgroundColor = "#D9EEE1";
+  document.getElementById("Tests").style.paddingLeft = "5%";
+  document.getElementById("Tests").style.paddingTop = "5%";
+  document.getElementById("Tests").style.height = "265px";
+  document.getElementById("Tests").style.margin = "10px";
+  document.getElementById("Tests").style.padding - "10px";
+  document.getElementById("ex").innerHTML =
+    '<h3 style = "color:#04AA6D"> CORRECT!</h3>'
+  document.getElementById("Test").innerHTML = " ";
+  document.getElementById("Test").style.backgroundColor = "#D9EEE1";
+
+  document.getElementById("Task").innerHTML = "";
 }
 
 function stylesIfWrongAnswer() {
-  document.getElementById("outputTests").style.backgroundColor = "#FFC0C7";
-  document.getElementById("outputTests").style.paddingLeft = "5%";
-  document.getElementById("outputTests").style.paddingTop = "5%";
-  document.getElementById("outputTests").style.height = "265px";
-  document.getElementById("outputTests").style.margin = "10px";
-  document.getElementById("outputTests").style.padding - "10px";
+  document.getElementById("Tests").style.backgroundColor = "#FFC0C7";
+  document.getElementById("Tests").style.paddingLeft = "5%";
+  document.getElementById("Tests").style.paddingTop = "5%";
+  document.getElementById("Tests").style.height = "265px";
+  document.getElementById("Tests").style.margin = "10px";
+  document.getElementById("Tests").style.padding - "10px";
+  document.getElementById("ex").innerHTML = '<h3 style = "color:#b94a48">WRONG!</h3>'
+  document.getElementById("Test").innerHTML = "";
+  document.getElementById("Test").style.backgroundColor = "#FFC0C7";
+  document.getElementById("Task").innerHTML = "";
+
 }
 
 function stylesForNewQ() {
-  document.getElementById("outputTests").style.backgroundColor =
+  document.getElementById("Tests").style.backgroundColor =
     "rgb(245, 246, 250)";
-  document.getElementById("outputTests").style.padding = "10px";
-  document.getElementById("outputTest").style.paddingBottom = "30px";
-  document.getElementById("outputTests").style.height = "265px";
-  document.getElementById("outputTests").style.margin = "10px";
-  document.getElementById("outputTests").style.padding - "10px";
-  document.getElementById("outputTest").style.backgroundColor =
+  document.getElementById("Tests").style.padding = "10px";
+  document.getElementById("Test").style.paddingBottom = "30px";
+  document.getElementById("Tests").style.height = "303px";
+  document.getElementById("Tests").style.margin = "10px";
+  document.getElementById("Tests").style.padding - "10px";
+  document.getElementById("Test").style.backgroundColor =
     "rgb(216, 216, 216)";
   document.getElementById("ex").innerHTML =
     '<h2 style = "font-size: 24px; padding: 0;">Exercise:</h2>';
-  document.getElementById("task").innerHTML = "Some text";
-  document.getElementById("outputTest").innerHTML = "test";
+  document.getElementById("Task").innerHTML = "Some text";
+  document.getElementById("Test").innerHTML = "test";
   document.getElementById("butt").innerHTML = document.getElementById(
     "butt"
   ).innerHTML = " ";
@@ -61,7 +70,11 @@ function checkingTheAnswerInOutPutTest1() {
     corectAnsverInOutPutTest1
   );
   document.getElementById("butt").innerHTML =
-    '<button id="butt" onclick="secondQuestionInOutPut()" style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Continue </button>';
+    `<button id="butt" onclick="secondQuestionInOutPut()" style =     border: none;
+  font - size: 15px;
+  padding: 10px 20px;
+  margin: 0;
+} "> Continue </button>`
 }
 
 function checkingTheAnswerInOutPutTest2() {
@@ -70,7 +83,11 @@ function checkingTheAnswerInOutPutTest2() {
   checkingTheAnswerIfThereIs1Answer(userAnswer, correctAnswer)
   document.getElementById("butt").innerHTML =
     `<button id="butt" onclick="firstQuestionInOutPut()" 
-    style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Return </button>`;
+    style = "    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0;
+}"> Return </button>`;
 
 }
 
@@ -79,7 +96,7 @@ function checkingTheAnswerInOutPutTest2() {
 function firstQuestionInOutPut() {
   stylesForNewQ();
   document.getElementById("task").innerHTML = "1. Fill in the field so that the resulting text is displayed in a pop - up window";
-  document.getElementById("outputTest").innerHTML =
+  document.getElementById("Test").innerHTML =
     "<div 'id='outputTest'' 'class='test''>" +
     "window" +
     "<input style = 'margin-right:4px; height:24px; width:13%; font-size:17px; border: none;' type='text' id='answer'/>" +
@@ -89,14 +106,17 @@ function firstQuestionInOutPut() {
     "butt"
   ).innerHTML =
     `<button id="butt" onclick="checkingTheAnswerInOutPutTest1()"
-    style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Sumbit </button>`;
+    style = " style = "    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0;"> Sumbit </button>`;
 
 }
 
 function secondQuestionInOutPut() {
   stylesForNewQ();
   document.getElementById("task").innerHTML = "2. Add the missing word";
-  document.getElementById("outputTest").innerHTML =
+  document.getElementById("Test").innerHTML =
     "<div 'id='outputTest'' 'class='test''>" +
     "console" +
     "<input style = 'margin-right:4px; height:24px; width:13%; font-size:17px; border: none;' type='text' id='answer2'/>" +
@@ -105,7 +125,77 @@ function secondQuestionInOutPut() {
   document.getElementById("butt").innerHTML = document.getElementById(
     "butt"
   ).innerHTML =
-    '<button id="butt" onclick="checkingTheAnswerInOutPutTest2()" style = "width: 46px; height: 16px; margin: 0px; padding: 0px"> Sumbit </button>';
+    `<button id="butt" onclick="checkingTheAnswerInOutPutTest2()" style = " style = "    border: none;
+  font - size: 15px;
+  padding: 10px 20px;
+  margin: 0; "> Sumbit </button>`;
 }
 
+// //operators checking
+
+function checkingTheAnswerInOperatorsTest1() {
+  let correctAnswer = "*"
+  let userAnswer = document.getElementById("answer3")
+  checkingTheAnswerIfThereIs1Answer(userAnswer, correctAnswer)
+  document.getElementById("butt").innerHTML = document.getElementById(
+    "butt").innerHTML =
+    `<button id="butt" onclick="secondQuestionInOperators()"
+    style = " style = "    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0;"> Sumbit </button>`
+
+}
+
+function checkingTheAnswerInOperatorsTest2() {
+  let userAnswer1 = document.getElementById("answer4")
+  let userAnswer2 = document.getElementById("answer5")
+  let correctAnswer1 = "+"
+  let correctAnswer2 = "+"
+  checkingTheAnswerIfThereIs2Answer(userAnswer1, userAnswer2, correctAnswer1, correctAnswer2)
+  document.getElementById("butt").innerHTML =
+    `<button id="butt" onclick="firstQuestionInOperators()"
+    style = "border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0;
+}"> Return </button>`;
+}
+
+//operators new
+
+function firstQuestionInOperators() {
+  stylesForNewQ();
+  document.getElementById("Task").innerHTML = "1. Use the multiplying operator"
+  document.getElementById("Test").innerHTML = `let x = 5;` +
+    `<br />` +
+    `let y = 2;` +
+    `<br />` +
+    `let z = x` +
+    `<input type = "text" class="answer" id = "answer3" />` + `y; `
+  document.getElementById("butt").innerHTML = document.getElementById(
+    "butt"
+  ).innerHTML =
+    `<button id="butt" onclick="checkingTheAnswerInOperatorsTest1()       " style = " style = "    border: none;
+  font - size: 15px;
+  padding: 10px 20px;
+  margin: 0; "> Sumbit </button>`;
+
+}
+
+function secondQuestionInOperators() {
+  stylesForNewQ();
+  document.getElementById("Tests").style.height = "303px"
+  document.getElementById("Task").innerHTML = "2. Use the correct operator"
+  document.getElementById("Test").innerHTML = `let user1 = "Kate";` + `</br>` +
+    `let user2 = "Alina";` + `</br>` +
+    `let sum = user1 <input type="text" class="answer" id="answer4" /> " " <input type="text" class="answer" id="answer5" /> user2;`
+  document.getElementById("butt").innerHTML = document.getElementById(
+    "butt"
+  ).innerHTML =
+    `<button id="butt" onclick="checkingTheAnswerInOperatorsTest2()" style = " style = "    border: none;
+  font - size: 15px;
+  padding: 10px 20px;
+  margin: 0; "> Sumbit </button>`;
+}
 

@@ -189,3 +189,9 @@ a {
   text-decoration: none;
   color: var(--nav-text-color);
 }
+
+#answer3,
+#answer4,
+#answer5 {
+  width: 3%;
+}
